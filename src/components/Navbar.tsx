@@ -34,7 +34,7 @@ function Navbar() {
        <Link href={'/profile'}>Profile</Link>
       </DropdownMenuItem>
       <DropdownMenuItem className='text-red-600'>
-        <Link href={'/logout'}>LogOut</Link>
+        <Link href={'/'}>LogOut</Link>
       </DropdownMenuItem>
 
     </DropdownMenuContent>

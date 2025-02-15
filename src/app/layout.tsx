@@ -4,9 +4,6 @@ import "./globals.css";
 import {Inter as FontSans} from 'next/font/google';
 
 import { cn } from "@/lib/utils";
-import Navbar from "@/components/Navbar";
-import Sidebar from "@/components/Sidebar";
-
 const fontSans = FontSans({
   subsets:['latin'],
   variable:"--font-sans"
@@ -40,15 +37,8 @@ export default function RootLayout({
           fontSans.variable
         )}
       >
-        
-        <Navbar/>
-        <div className="flex">
-        <div className="border bg-[#C9A857] fixed h-[100vh] w-[300px]">
-           <Sidebar/>
-        </div>
-        <div className="p-8 bg-[#FDFBF2] mt-[80px] w-full">
+        <div>
         {children}
-        </div>
         </div>
       </body>
     </html>

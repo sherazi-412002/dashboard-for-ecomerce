@@ -19,7 +19,7 @@ function Sidebar() {
     <li className={`flex gap-2 text-xl pl-4 hover:text-black hover:bg-white transition-all ${
          pathName === "/orders" ? "text-black bg-white" : "text-white"}`}>
       <ListOrdered className="h-5 mt-1 w-5" />
-       <Link href={'/orders'}>Manage Orders</Link>
+       <Link href={'/orders/orderslogin'}>Manage Orders</Link>
     </li>
 
     <li className={`flex gap-2 text-xl pl-4 hover:text-black hover:bg-white transition-all ${
